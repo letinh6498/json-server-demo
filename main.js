@@ -52,31 +52,16 @@ router.render = (req, res) => {
   // Otherwise, keep default behavior
   res.jsonp(res.locals.data);
 };
-server.get('/tinh', function(request, response){
-  response.sendFile('index.html');
+
+const express = require('express');
+const app = express();
+
+app.get('/', function(request, response){
+    response.sendFile('index.html');
 });
 
 // Use default router
 server.use('/api', router);
-
-// var http = require('http'),
-//     fs = require('fs');
-
-
-// fs.readFile('./index.html', function (err, html) {
-//     if (err) {
-//         throw err; 
-//     }       
-//     http.createServer(function(request, response) {  
-//         response.writeHeader(200, {"Content-Type": "text/html"});  
-//         response.write(html);  
-//         response.end();  
-//     }).listen(3000);
-// });
-
-
-
-
 
 // Start server
 const PORT = process.env.PORT || 3000;
