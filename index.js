@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 port = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
 })
