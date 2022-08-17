@@ -56,7 +56,7 @@ router.render = (req, res) => {
 const express = require('express');
 const app = express();
 
-app.get('/', function(request, response){
+app.get('/tinh', function(request, response){
     response.sendFile('index.html');
 });
 
