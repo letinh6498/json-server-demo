@@ -1,28 +1,22 @@
 {
   "name": "json-server-demo",
   "version": "1.0.0",
-  "description": "demo how to use json-server",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "start": "npm run generate-data && node main.js",
-    "generate-data": "node generate-data.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "json-server"
-  ],
-  "author": "Paul Nguyen",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letinh6498/json-server-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letinh6498/json-server-demo/issues"
+  },
+  "homepage": "https://github.com/letinh6498/json-server-demo#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "faker": "^5.5.0",
-    "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
-    "json-server": "^0.16.3",
-    "query-string": "^7.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "express": "^4.18.1"
   }
 }
