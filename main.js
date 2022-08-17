@@ -52,6 +52,9 @@ router.render = (req, res) => {
   // Otherwise, keep default behavior
   res.jsonp(res.locals.data);
 };
+server.get('/tinh', function(request, response){
+  response.sendFile('index.html');
+});
 
 // Use default router
 server.use('/api', router);
@@ -73,9 +76,7 @@ server.use('/api', router);
 
 
 
-server.get('/tinh', function(request, response){
-    response.sendFile('index.html');
-});
+
 
 // Start server
 const PORT = process.env.PORT || 3000;
